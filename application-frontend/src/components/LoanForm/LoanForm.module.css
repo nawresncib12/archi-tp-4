@@ -1,0 +1,47 @@
+.loanForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loanForm input {
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  min-width: 200px;
+}
+
+.loanFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.loanForm button {
+  outline: none;
+  background-color: rgb(251, 129, 150);
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bolder;
+  padding: 10px;
+  min-width: 100px;
+  border: 2px solid rgb(251, 129, 150);
+}
+
+.loanForm .buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.loanForm button.secondary {
+  color: rgb(251, 129, 150);
+  border: 2px solid rgb(251, 129, 150);
+  background-color: white;
+}

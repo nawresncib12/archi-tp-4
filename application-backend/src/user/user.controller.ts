@@ -33,7 +33,7 @@ export class UserController extends AbstractController {
     return this.notFoundResponse();
   }
 
-  @Post(':id/loanEligibility')
+  @Post('loanEligibility/:id')
   async setEligibleForLoan(@Param('id') id: string, @Body() eligible: boolean) {
     const userId = parseInt(id);
 
@@ -41,7 +41,10 @@ export class UserController extends AbstractController {
 
     const user = await this.userService.findOne(userId);
 
-    if (user) return this.userService.setEligibleForLoan(user, eligible);
+    if (user) {
+      this.userService.setEligibleForLoan(user, eligible);
+      return this.successResponse('eligibility updated');
+    }
 
     return this.notFoundResponse();
   }

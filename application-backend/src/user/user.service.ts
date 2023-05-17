@@ -24,7 +24,8 @@ export class UserService extends AbstractController {
   }
 
   async setEligibleForLoan(user: User, eligible: boolean): Promise<User> {
-    user.eligibleForLoan = eligible;
+    user.eligibleForLoan = true;
+    console.log(user);
     return this.userRepository.save(user);
   }
 }

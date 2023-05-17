@@ -1,0 +1,17 @@
+.cardContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  min-height: 400px;
+  min-width: 200px;
+  background-color: pink;
+  border-radius: 8px;
+  margin: auto;
+  padding: 50px 20px;
+  width: 50vw;
+  height: 70vh;
+}

@@ -1,0 +1,19 @@
+.userInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  outline: none;
+  background-color: rgb(251, 129, 150);
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bolder;
+  padding: 10px;
+}

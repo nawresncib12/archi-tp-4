@@ -50,9 +50,13 @@ export class OrchestrerController extends AbstractController {
         );
       }
 
-      await axios.post(`${application_api}:${id}/loanEligibility`, {
-        eligibility: true,
-      });
+      await axios.post(
+        `${application_api}/users/loanEligibility/${id}`,
+        {
+          eligibility: true,
+        },
+        {},
+      );
 
       return this.successResponse(
         {

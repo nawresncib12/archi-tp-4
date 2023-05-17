@@ -7,4 +7,4 @@ import { DataExtractionController } from './dataExtraction.controller';
   controllers: [DataExtractionController],
   exports: [],
 })
-export class UsersModule {}
+export class DataExtractionModule {}
